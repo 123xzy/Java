@@ -1,0 +1,28 @@
+public class String_13.Concatenation {
+  public String_13.Concatenation();
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc           #16                 // String mango
+       2: astore_1
+       3: new           #18                 // class java/lang/StringBuilder
+       6: dup
+       7: ldc           #20                 // String abc
+       9: invokespecial #22                 // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+      12: aload_1
+      13: invokevirtual #25                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      16: ldc           #29                 // String def
+      18: invokevirtual #25                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      21: bipush        47
+      23: invokevirtual #31                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      26: invokevirtual #34                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      29: astore_2
+      30: getstatic     #38                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      33: aload_2
+      34: invokevirtual #44                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      37: return
+}
