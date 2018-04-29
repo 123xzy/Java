@@ -9,7 +9,5 @@ public class MapOfList {
 	static {
 		petPeople.put(new Person("Dawn"),
 				Arrays.asList(new Cymric("Molly"),new Mutt("Spot")));
-		
-	}
-	
+	}	
 }
