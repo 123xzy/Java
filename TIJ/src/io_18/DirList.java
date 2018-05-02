@@ -4,6 +4,11 @@ import java.util.regex.*;
 import java.io.*;
 import java.util.*;
 
+/**
+ * 目录过滤器
+ * @author xzy
+ *
+ */
 public class DirList {
 	public static void main(String[] args) {
 		File path = new File(".");
