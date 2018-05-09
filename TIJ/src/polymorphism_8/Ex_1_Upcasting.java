@@ -27,7 +27,6 @@ public class Ex_1_Upcasting {
 	public static void main(String[]args) {
 		ride(new Unicycle());
 		ride(new Bicycle());
-		ride(new Tricycle());
-		
+		ride(new Tricycle()); 
 	}
 }

@@ -1,7 +1,7 @@
 package interfaces_9;
 
 import net.xzy.Print;
-import polymorphism_8.Note;
+import polymorphism_8.music.Note;
 
 abstract class Instrument {
 	private int i;

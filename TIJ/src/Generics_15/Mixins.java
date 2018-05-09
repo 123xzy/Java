@@ -3,10 +3,11 @@ package Generics_15;
 import java.util.*;
 
 /**
+ * 混型可以产生一个表示混型中所有类型的类，如果在混型类中修改某些东西
+ * 这些修改可以应用于混型所引用的所有类型上
  * 混型的价值之一是可以将特性和行为一致地应用于多个类上
  * 使用接口实现混型
  * @author xzy
- *
  */
 interface TimeStamped{	long getStamp();	}
 

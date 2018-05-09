@@ -1,5 +1,6 @@
 package polymorphism_8;
 import net.xzy.Print;
+import polymorphism_8.music.Note;
 
 class Instrument {
 	void play(Note n) {Print.print("Instrument.play()"+n);}
