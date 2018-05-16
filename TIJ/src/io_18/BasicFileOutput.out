@@ -1,0 +1,26 @@
+1: package io_18;
+2: 
+3: import java.io.*;
+4: 
+5: /**
+6:  * 
+7:  * @author xzy
+8:  *
+9:  */
+10: public class BasicFileOutput {
+11: 	static String file = "src/io_18/BasicFileOutput.out";
+12: 	public static void main(String[] args) throws IOException{
+13: 		BufferedReader in = new BufferedReader(
+14: 			new StringReader(
+15: 				BufferedInputFile.read("src/io_18/BasicFileOutput.java")));
+16: 		//用BufferedWriter将其包装起来用以缓冲输入，能显著增加IO操作的性能
+17: 		PrintWriter out = new PrintWriter(
+18: 				new BufferedWriter(new FileWriter(file)));
+19: 		int lineCount = 1;
+20: 		String string;
+21: 		while((string = in.readLine()) != null)
+22: 		out.println(lineCount++ + ": " + string);
+23: 		out.close();
+24: 		System.out.println(BufferedInputFile.read(file));
+25: 	}
+26: }

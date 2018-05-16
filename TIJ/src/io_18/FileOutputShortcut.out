@@ -1,0 +1,23 @@
+1: package io_18;
+2: 
+3: import java.io.*;
+4: 
+5: /**
+6:  * 
+7:  * @author xzy
+8:  *
+9:  */
+10: public class FileOutputShortcut {
+11: 	static String file = "src/io_18/FileOutputShortcut.out";
+12: 	public static void main(String[] args) throws IOException{
+13: 		BufferedReader in = new BufferedReader(
+14: 			new StringReader(BufferedInputFile.read("src/io_18/FileOutputShortcut.java")));
+15: 		PrintWriter out = new PrintWriter(file);
+16: 		int lineCount = 1;
+17: 		String string;
+18: 		while((string = in.readLine()) != null)
+19: 			out.println(lineCount++ + ": " + string);
+20: 		out.close();
+21: 		System.out.println(BufferedInputFile.read(file));
+22: 	}
+23: }
