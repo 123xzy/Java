@@ -4,7 +4,6 @@ import static net.xzy.Print.*;
  * String对象是不可变的，每个看起来会修改String的方法，实际都是创建
  * 一个全新的String对象，以包含修改后的字符串，最初的String不变
  * @author lenovo
- *
  */
 public class Immutable {
 	/**
